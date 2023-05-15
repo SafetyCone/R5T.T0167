@@ -10,7 +10,7 @@ namespace R5T.T0167.F000
     [FunctionalityMarker]
     public partial interface IAssemblyFilePathOperator : IFunctionalityMarker
     {
-        public AssemblyFilePath Get_AllMarkerAttributeTypesAssemblyFilePath()
+        public IAssemblyFilePath Get_AllMarkerAttributeTypesAssemblyFilePath()
         {
             var exampleAssemblyFilePath = Instances.ExecutablePathOperator.Get_ExecutableDirectoryAssemblyFilePath(
                 Instances.AssemblyNames.AllMarkerAttributeTypesAssemblyName);
@@ -19,7 +19,7 @@ namespace R5T.T0167.F000
             return output;
         }
 
-        public DocumentationXmlFilePath Get_AllMarkerAttributeTypesAssemblyDocumentationFilePath()
+        public IDocumentationXmlFilePath Get_AllMarkerAttributeTypesAssemblyDocumentationFilePath()
         {
             var documentationFilePath = Instances.ExecutablePathOperator.Get_ExecutableDirectoryAssemblyDocumentatinFilePath(
                 Instances.AssemblyNames.AllMarkerAttributeTypesAssemblyName);

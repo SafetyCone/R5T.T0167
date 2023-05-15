@@ -9,8 +9,8 @@ namespace R5T.T0167.F000
     [ValuesMarker]
     public partial interface IFilePaths : IValuesMarker
     {
-        public AssemblyFilePath AllMarkerAttributeTypesAssemblyFilePath => Instances.AssemblyFilePathOperator.Get_AllMarkerAttributeTypesAssemblyFilePath();
-        public DocumentationXmlFilePath AllMarkerAttributeTypesAssemblyDocumentationFilePath =>
+        public IAssemblyFilePath AllMarkerAttributeTypesAssemblyFilePath => Instances.AssemblyFilePathOperator.Get_AllMarkerAttributeTypesAssemblyFilePath();
+        public IDocumentationXmlFilePath AllMarkerAttributeTypesAssemblyDocumentationFilePath =>
             Instances.AssemblyFilePathOperator.Get_AllMarkerAttributeTypesAssemblyDocumentationFilePath();
     }
 }

@@ -13,7 +13,7 @@ namespace R5T.T0167.F000
             Action<Assembly> assemblyAction)
         {
             Instances.ReflectionOperator.InAssemblyContext(
-                Instances.FilePaths.AllMarkerAttributeTypesAssemblyFilePath,
+                Instances.FilePaths.AllMarkerAttributeTypesAssemblyFilePath.Value,
                 assemblyAction);
         }
     }
